@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+.title {
+  background-color: royalblue;
+  background-color: black;
+  border-radius: 10px;
+  color: gold;
+  margin-bottom: 5px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

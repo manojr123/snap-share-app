@@ -1,0 +1,27 @@
+.sharePanel {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shareBtn {
+    font-size : 18px;
+    background-color: #29AB87;
+    width : 100px;
+    border-radius: 10px;
+}
+
+.options {
+    margin-left: 10px;
+
+}
+
+.option {
+    display: inline-block;
+    margin-left: 5px;
+    background-color: gold;
+    background-color:goldenrod;
+    border-radius: 5px;
+    border: 2px solid black;
+
+}
