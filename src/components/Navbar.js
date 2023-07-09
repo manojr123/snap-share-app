@@ -20,7 +20,7 @@ function Navbar (props) {
         <div className={styles.navbar}>
             <div className={styles.title}><strong>Snap Share</strong></div>
             <div className={styles.details}>
-                <div>{currentEmail}</div>
+                <div className={styles.currentEmail}>{currentEmail}</div>
                 {loggedIn && <button className={styles.logout} onClick={handleLogout}>Logout</button>}
 
             </div>

@@ -74,7 +74,9 @@ button {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
         
-
+    .currentEmail {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width:300px) {
@@ -92,5 +94,8 @@ button {
         color: blue;
         margin-left: 20px;
     }
-    
+    .currentEmail {
+        font-size: 10px;
+    }
+
 }
