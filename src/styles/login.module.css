@@ -16,7 +16,7 @@
     margin: 50px auto;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .signupForm {
     background-color: wheat;
@@ -31,7 +31,7 @@
     margin: 50px auto;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .field {
@@ -54,12 +54,14 @@
     width: 100%;
     margin-top: 20px;
     background: #ef7917;
-    border-radius: 2px;
+    border-radius: 5px;
     color: #fff;
     font-size: 20px;
     padding: 9px;
     border: none;
     outline: none;
+    height: 40px;
+
   }
   .field button:hover {
     cursor: pointer;

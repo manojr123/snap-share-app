@@ -34,6 +34,7 @@ function Login (props) {
             updateLoggedIn(true);
             updateCurrentEmail("guest@gmail.com");
             localStorage.setItem("loggedIn", "true" );
+            localStorage.setItem("currentEmail", "guest@gmail.com" );
 
             navigate("/");
         }

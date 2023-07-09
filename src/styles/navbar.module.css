@@ -46,4 +46,11 @@ button {
     cursor: pointer;
     text-align: left;
     color: blue;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.details {
+    display : flex;
+    margin-top: 15px;
 }

@@ -8,7 +8,7 @@ import '../styles/App.css';
 
 function App() {
   const [usersList, setUsersList] = useState([{username : "guest", password: "guest"}]); // List of valid users
-  const [currentEmail, setCurrentEmail ] = useState(''); // Current active user
+  const [currentEmail, setCurrentEmail ] = useState(localStorage.getItem("currentEmail")); // Current active user
   const [currentPasswd, setCurrentPasswd] = useState(''); // Current active passwd
   const [loggedIn, setLoggedIn] = useState(localStorage.getItem("loggedIn"));
 
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
 
       <Router>
-        <Navbar currentEmail={currentEmail} updateLoggedIn={updateLoggedIn}/>
+        <Navbar currentEmail={currentEmail} loggedIn={loggedIn} updateLoggedIn={updateLoggedIn}/>
         <Routes>
           <Route path="/" element={<Home loggedIn={loggedIn} updateLoggedIn={updateLoggedIn} />}/>
           <Route  path="/login" element={<Login usersList={usersList} loggedIn={loggedIn} updateLoggedIn={updateLoggedIn} updateCurrentEmail={updateCurrentEmail}/>} />

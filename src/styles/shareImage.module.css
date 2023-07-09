@@ -9,19 +9,22 @@
     background-color: #29AB87;
     width : 100px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .options {
     margin-left: 10px;
+    display: flex;
+    margin-top: 10px;
 
 }
 
 .option {
-    display: inline-block;
-    margin-left: 5px;
-    background-color: gold;
-    background-color:goldenrod;
+    margin-left: 15px;
     border-radius: 5px;
-    border: 2px solid black;
 
+}
+.image {
+    height : 40px;
+    width : 40px;
 }
