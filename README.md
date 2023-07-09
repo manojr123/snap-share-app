@@ -38,6 +38,7 @@
        - Random Snap is fetched from https://picsum.photos
        - Random Snap Preview URL is fetched from a backend server
        - Backend server hosted @https://snapshare-backend-node.onrender.com
+       - Backend code in github @https://github.com/manojr123/snap-share-backend
        - Renders components RandomImage and ShareImage   
     - **Login and SignUp** - Handles Login and Sign up
   - **'styles'** folder - Contains all the CSS styles for all the components
@@ -65,9 +66,4 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-git clone https://github.com/manojr123/snap-share-app
-
-In the project directory, you can run:
 
