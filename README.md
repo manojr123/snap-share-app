@@ -22,6 +22,7 @@
    - the URL is shared on the mentioned social media platforms. 
    - Appropriate meta tags are obtained from a obtained from a backend hosted node server 
    - Handles errors and success scenarios while fetching data
+   - Design is responsive and works seamlessly on different devices and screen sizes
 
 # Folder Structure
   - **'components'** folder - Contains all the React Components

@@ -5,4 +5,52 @@
     border: 0px;
     border-radius: 10px;
     margin-top: 20px;
+    height : 400px;
+    width : 400px;
+}
+
+@media screen and (max-width:400px) {
+    .image {
+        border: 6px solid black;
+        border: 6px solid gold;
+        border: 6px solid wheat;
+        border: 0px;
+        border-radius: 10px;
+        margin-top: 20px;
+        height : 300px;
+        width : 300px;
+    }
+    
+    
+}
+
+@media screen and (max-width:300px) {
+    .image {
+        border: 6px solid black;
+        border: 6px solid gold;
+        border: 6px solid wheat;
+        border: 0px;
+        border-radius: 10px;
+        margin-top: 20px;
+        height : 250px;
+        width : 250px;
+    }
+    
+    
+}
+
+
+@media screen and (max-width:250px) {
+    .image {
+        border: 6px solid black;
+        border: 6px solid gold;
+        border: 6px solid wheat;
+        border: 0px;
+        border-radius: 10px;
+        margin-top: 20px;
+        height : 200px;
+        width : 200px;
+    }
+    
+    
 }

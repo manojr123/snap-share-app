@@ -54,3 +54,43 @@ button {
     display : flex;
     margin-top: 15px;
 }
+
+@media screen and (max-width:1000px) {
+    .title {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 8px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+        
+
+}
+
+@media screen and (max-width:600px) {
+    .title {
+        font-size: 25px;
+        margin-left: 20px;
+        margin-top: 8px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+        
+
+}
+
+@media screen and (max-width:300px) {
+    .title {
+        font-size: 15px;
+        margin-top: 8px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+        
+    .logout {
+        background-color:white;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: left;
+        color: blue;
+        margin-left: 20px;
+    }
+    
+}
