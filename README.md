@@ -1,70 +1,73 @@
+# SnapShare
+
+## Requirement
+   - Create a simple React application that displays a random image in the center of the page each time the page is refreshed. 
+   - Include a share button under the image that allows users to share the current image on Facebook, Twitter, and WhatsApp. 
+   - The image displayed on the page should be visible as a preview when the URL is shared on these platforms.
+
+## Description
+   - **Login and Signup** functionality
+   - Basic Authentication
+   - Presistence of Login Data over page referesh using LocalStorage
+   - **Image Display**:
+   - The application renders a new, random image in the center of the page 
+     each time the page is refreshed. 
+   - Uses https://picsum.photos/ to fetch random images.
+   - **Share Button**:
+   - Share button provided beneath the image. 
+   - When a user clicks on this button, options provided to share the page on
+     Facebook, Twitter, and WhatsApp.
+   - **Share Preview**: 
+   - Ensures that the current image displayed on the page is visible as a preview when
+   - the URL is shared on the mentioned social media platforms. 
+   - Appropriate meta tags are obtained from a obtained from a backend hosted node server 
+   - Handles errors and success scenarios while fetching data
+
+# Folder Structure
+  - **'components'** folder - Contains all the React Components
+      - Key Components : 
+        - **App**  -
+            - Container for the usersList, current logged in Email, loggedIn Flag
+            - Renders the routes for Home, Login and Signup
+         - **Navbar** - Shows the current logged in user, Logout option
+        - **Random Image** - Renders the random image fetched from the site   
+        - **Share Image** - Handle the random image share with social media sites  
+  - **pages**
+    - **Home Component** 
+       - State Container for the random Snap URL and the random Snap Preview URL
+       - Random Snap is fetched from https://picsum.photos
+       - Random Snap Preview URL is fetched from a backend server
+       - Backend server hosted @https://snapshare-backend-node.onrender.com
+       - Renders components RandomImage and ShareImage   
+    - **Login and SignUp** - Handles Login and Sign up
+  - **'styles'** folder - Contains all the CSS styles for all the components
+
+## Screenshot (SnapShare App)
+
+![screenshot](https://drive.google.com/uc?export=view&id=1ngsDXiCo6UodvkJsHpkmNSXFD0Z3YWXq)
+
+## Screenshot (Social Media Sites Preview)
+
+![screenshot](https://drive.google.com/uc?export=view&id=11jZEfwc9XCYffrRoUQXwyczhfZDGrNHi)
+
+
+# Instructions to use the SnapShare app
+  - git clone https://github.com/manojr123/snap-share-app
+  - npm install
+  - `npm start` . Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  - **Dummy login** : guest@gmail.com Password : guest
+  - On every refresh a new random image is shown
+  - Share Button when clicked shows the options to share on social Media sites Facebook, Twitter, Whatsapp
+  - Preview of the image is shown on all the social sites
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
+git clone https://github.com/manojr123/snap-share-app
+
 In the project directory, you can run:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
