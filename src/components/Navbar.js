@@ -1,13 +1,18 @@
 import styles from '../styles/navbar.module.css'
-import { Link } from 'react-router-dom';
 
-/* Navbar Component : Renders the Navbar */
+/* Navbar Component : Renders the Navbar 
+   - Shows the current logged in user
+   - Displays logout option
+*/
 function Navbar (props) {
 
     const {currentEmail, loggedIn, updateLoggedIn} = props;
+
+    // Function to handle logout
     function handleLogout() {
         localStorage.setItem("loggedIn", "false" );
         updateLoggedIn(false);
+        
       }
 
     return (

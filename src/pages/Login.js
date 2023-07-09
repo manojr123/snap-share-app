@@ -8,7 +8,7 @@ import { useNavigate, Link } from 'react-router-dom';
 */
 function Login (props) {
 
-    const {loggedIn, updateLoggedIn, updateCurrentEmail} = props;
+    const {loggedIn,usersList, updateLoggedIn, updateCurrentEmail} = props;
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -16,6 +16,7 @@ function Login (props) {
     const navigate = useNavigate();
     console.log("Login : ...");
     console.log("loggedIn ...",loggedIn);
+    console.log("usersList ...",usersList);
 
     if (loggedIn) {
         console.log("Already logged in ...");
@@ -27,6 +28,8 @@ function Login (props) {
         e.preventDefault();
         setLoggingIn(true);
         console.log('Login ...handleSubmit');
+        console.log('userList ...', usersList);
+
         if (!email || !password) {
           return;
         }
@@ -35,10 +38,20 @@ function Login (props) {
             updateCurrentEmail("guest@gmail.com");
             localStorage.setItem("loggedIn", "true" );
             localStorage.setItem("currentEmail", "guest@gmail.com" );
-
             navigate("/");
         }
         
+        for (let i=0; i< usersList.length; i++) {
+          if ( usersList[i].username === email ) {
+            if (usersList[i].password === password) {
+              updateLoggedIn(true);
+              updateCurrentEmail(email);
+              localStorage.setItem("loggedIn", "true" );
+              localStorage.setItem("currentEmail",email );
+              navigate("/");
+            }
+          }
+        }
 
         setLoggingIn(false);
       };
