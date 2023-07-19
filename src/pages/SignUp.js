@@ -7,7 +7,7 @@ import { useNavigate, Link } from 'react-router-dom';
 */
 function SignUp (props) {
 
-    const {usersList,setUsersList, updateUserList} = props;
+    const {updateUserList} = props;
 
 
     const [name, setName] = useState('');
@@ -38,16 +38,16 @@ function SignUp (props) {
 
     }
 
-    function validateEmail (email) {
-      const emailPattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+    // function validateEmail (email) {
+    //   const emailPattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
 
-      if (email.test(emailPattern)) {
-        return true;
-      } else {
-        alert('Email Id Invalid ! eg abc@gmail.com etc !')
-        return false;
-      }
-    }
+    //   if (email.test(emailPattern)) {
+    //     return true;
+    //   } else {
+    //     alert('Email Id Invalid ! eg abc@gmail.com etc !')
+    //     return false;
+    //   }
+    // }
 
     return (
         <form className={styles.signupForm} onSubmit={handleFormSubmit}>
