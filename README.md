@@ -52,6 +52,8 @@
 
 ![screenshot](https://drive.google.com/uc?export=view&id=11jZEfwc9XCYffrRoUQXwyczhfZDGrNHi)
 
+# Deployed Link
+https://snap-share-app.netlify.app/
 
 # Instructions to use the SnapShare app
   - git clone https://github.com/manojr123/snap-share-app
