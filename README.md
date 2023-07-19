@@ -54,6 +54,7 @@
 
 # Deployed Link
 https://snap-share-app.netlify.app/
+**Dummy login** : guest@gmail.com Password : guest
 
 # Instructions to use the SnapShare app
   - git clone https://github.com/manojr123/snap-share-app
